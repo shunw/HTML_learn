@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = 'utf-8' />
+	<title>Text</title>
+
+	<style>
+		ul.topnav{
+			list-style-type: none; 
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		ul.topnav li{float: left;}
+
+		ul.topnav li a{
+			display: inline-block;
+			color:#f2f2f2;
+			text-align: center; 
+			padding: 14px 16px;
+			text-decoration: none;
+			transition: .3s;
+			font-size: 17px;
+		}
+
+		ul.topnav li a: hover {background-color: #555;}
+
+		ul.topnav li.icon {display: none;}
+
+
+
+	}
+}
+	</style>
+
+</head>
+<ul class = 'topnav' id = 'myTopnav'>
+	<li><a href = 'learning_note.html'> Home </a></li>
+	<li><a href = 'basicPage.html'> basicPage </a></li>
+	<li><a href = 'text_HTML.html'> Text </a></li>
+	<li><a href = 'CSS-构造块.html'> CSS-构造块 </a></li>
+	
+</ul>
+
+<body>
+
+<article id = 'text'>
+	<h1> Text/ 文本</h1>
+	<li><a href = '#small'> small 指定细则</a></li>
+	<li><a href = '#strong/em'> 重要文本和强调文本</a></li>
+	<li><a href = '#figure'> 创建图</a></li>
+	<li><a href = '#cite'> 引用或参考</a></li>
+	<li><a href = '#blockquote'> 引述文本</a></li>
+	<li><a href = '#time'> 指定时间</a></li>
+	
+	<article id = 'small'>
+		<h2>small 指定细则</h2>
+		<p>免责声明，注解，署名等类型的文本</p>
+		<p><em>Note1</em>: 一定要在符合内容语义的情况下使用该元素，而不是为了减小字号而使用。</p>
+		<p><em>Note2</em>: small只适用于短语，因此不要用它标记长的法律声明。</p>
+		<p><a href = '#text'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'strong/em'>
+		<h2>重要文本和强调文本</h2>
+		<p>strong表示内容的重要性，而em表示内容的重点。</p>
+		<p><em>Note1</em>: 不要用b元素代替strong，也不要用i元素代替em。尽管它们在浏览器中显示的样式是一样的，但是它们的含义却很不一样。</p>
+		<p><em>Note2</em>: 可以在标记strong的短语中再嵌套strong文本。em也同样可以进行嵌套。</p>
+		<p><em>Note3</em>: HTML5将b重新定义为：表示出于使用目的提醒读者注意的一块文字，不传达任何额外的重要性，也不表示其他的语态和语气，用于如文档摘要里的关键词，评论中的产品名，基于文本的交互式软件中指示操作的文字，文章导语等。</p>
+		<p><em>Note4</em>: HTML5将i重新定义为：表示一块不同于其他文字的文字，具有不同的语态或语气，或其他不同于常规之处，用于如分类名称，技术术语，外语里的惯用语，翻译的散文，西方文字中的船舶名称等。</p>
+		<p><a href = '#text'>Back2Outline</a></p>
+	</article>
+
+
+	<article id = 'figure'>
+		<h2>figure 创建图</h2>
+		<p>figure可以是图表，照片，图形，插图，代码片段，以及其他类似的独立内容。</p>
+		<p>figcaption是figure的标题，可选。</p>
+		<p><em>Note1</em>: figure元素可以包含多个内容块。不过，不管figure里有多少内容，只允许有一个figcaption。</p>
+		<p><em>Note2</em>: 不要简单的将figure作为在文本中嵌入独立内容实例的方法。有的情况下更适合用aside元素。</p>
+		<p><em>Note3</em>: 使用margin-left:0 可以让图直接抵到页面左边缘; figure {float: left; }让包含figure的文本环绕在它周围。</p>
+		<p><a href = '#text'>Back2Outline</a></p>
+	</article>
+	
+	<article id = 'cite'>
+		<h2>引用或参考</h2>
+		<p>指明对某内容源的引用或参考。如：戏剧，脚本或图书的标题，歌曲，电影，照片或雕塑的名称，演唱会或音乐会等。</p>
+		<p><em>Note1</em>: 对于要从引用来源中引述内容的情况，使用blockquote或q元素标记引述的文本。cite只用于参考源本身，而不是从中引述的内容。</p>
+		<p><a href = '#text'>Back2Outline</a></p>
+	</article>
+	
+	<article id = 'blockquote'>
+		<h2>引述文本</h2>
+		<p>blockquote表示单独存在的引述。q元素则用于短的引述。</p>
+		<p><em>Note1</em>: 对于要从引用来源中引述内容的情况，使用blockquote或q元素标记引述的文本。cite只用于参考源本身，而不是从中引述的内容。</p>
+		<p><em>Note2</em>: 如果要添加署名，署名应该放在blockquote外面。可以把署名放在p里，不过使用figure和figcaption可以更好的将引述文本与其来源关联起来。</p>
+		<p><em>Note3</em>: 可以对blockquote和q使用可选的cite属性，提供引述内容的来源的url。尽管浏览器通常不会将cite的url呈现给用户。</p>
+		<p><em>Note4</em>: q元素引用的内容不能跨越不同段落，在这种情况下应该使用blockquote。</p>
+		<p><em>Note5</em>: bolckquote和q元素可以嵌套。</p>
+		<p><em>Note6</em>: 由于q元素的跨浏览器问题，很多开发人员避免使用q元素，而是选择直接输入正确的引号或使用字符实体。</p>
+		<p><a href = '#text'>Back2Outline</a></p>
+	</article>
+
+
+	<article id = 'time'>
+		<h2>指定时间</h2>
+		<p>TBC from page 72。</p>
+		<p><em>Note1</em>: </p>
+		<p><a href = '#text'>Back2Outline</a></p>
+	</article>
+
+
+</article>
+
+</body>
+
+	
+</html>

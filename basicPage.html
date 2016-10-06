@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = 'utf-8' />
+	<title>Basic Page</title>
+
+	<style>
+		ul.topnav{
+			list-style-type: none; 
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		ul.topnav li{float: left;}
+
+		ul.topnav li a{
+			display: inline-block;
+			color:#f2f2f2;
+			text-align: center; 
+			padding: 14px 16px;
+			text-decoration: none;
+			transition: .3s;
+			font-size: 17px;
+		}
+
+		ul.topnav li a: hover {background-color: #555;}
+
+		ul.topnav li.icon {display: none;}
+
+
+
+	}
+}
+	</style>
+
+</head>
+<ul class = 'topnav' id = 'myTopnav'>
+	<li><a href = 'learning_note.html'> Home </a></li>
+	<li><a href = 'basicPage.html'> basicPage </a></li>
+	<li><a href = 'text_HTML.html'> Text </a></li>
+	<li><a href = 'CSS-构造块.html'> CSS-构造块 </a></li>
+	
+</ul>
+
+<body>
+
+<article id = 'basicPage'>
+	<h1> 普通页面构成</h1>
+	<li><a href = '#header'> header</a></li>
+	<li><a href = '#nav'>nav</a></li>
+	<li><a href = '#main'>main</a></li>
+	<li><a href = '#article'>article</a></li>
+	<li><a href = '#section'>section</a></li>
+	<li><a href = '#aside'>aside</a></li>
+	<li><a href = '#footer'>footer</a></li>
+	<li><a href = '#div'>div</a></li>
+	<li><a href = '#ARIA'>ARIA</a></li>
+	<li><a href = '#Class/ID'>Class/ID</a></li>
+	<li><a href = '#title'>title</a></li>
+
+	<article id = 'header'>
+		<h2>header</h2>
+		<p>介绍性或导航性内容的区域 --- header</p>
+		<p>页眉／页头 --- 处于页面顶端／接近这个位置: 网站标志，主导航</p>
+		<p><em>Note1</em>: 只在必要时使用header。大多数情况下，如果食用h1 - h6能满足需求，就没有必要用header将它包起来</p>
+		<p><em>Note2</em>: 不能在header里嵌套footer元素或另一个header，也不能在footer或address元素里嵌套header</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<articel id = 'nav'>
+		<h2>nav</h2>
+		<p>nav中的链接可以指向页面中的内容，也可以指向其他页面或资源。无论是哪种情况，应该仅对文档中重要的链接群使用nav</p>
+		<p><em>Note1</em>: 如何判断是否对一组链接使用nav，这取决于内容的组织情况。至少应该将网站全局导航（让用户可以跳至网站各个主要部分的导航）标记为nav。这种nav通常出现在页面记得header元素里</p>
+		<p><em>Note2</em>: 不允许将nav嵌套在address元素中</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'main'>
+		<h2>main</h2>
+		<p>一个页面只有一个部分代表其主要内容。可以将这样的内容包在main元素里，该元素在一个页面仅使用一次</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'article'>
+		<h2>article</h2>
+		<p>article元素表示文档，页面，应用或网站中一个独立的容器，原则上是可以独立分配或可再用的，就像聚合内容中的各个部分。它可以是一篇论坛帖子，一篇杂志或报纸文章，一篇博客条目，一则用户提交的评论，一个交互式的小部件或小工具，或任何其他独立的内容项。</p>
+		<p><em>Note1</em>: 可以将article嵌套在另一个article中</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'section'>
+		<h2>section</h2>
+		<p>section元素代表文档或应用的一个一般的区块。在这里，section是<em>具有相似主题的一组内容</em>，通常包含一个标题。section的例子包括：章节，标签式对话框中的各种标签页，论文中带编号的区块。网页的主页可分成介绍，新闻条目，联系信息等区块</p>
+		<p><em>Note1</em>: 如果只是出于添加样式的原因要对内容添加一个容器，应使用div，而不是section。</p>
+		<p><em>Note2</em>: 可以将section嵌套在article里，从而显式的标出报告，故事，手册等文章的不同部分或不同章节。</p>
+		<p><em>Note3</em>: section和article的区别在于，section在本质上组织性和结构性更强，而article代表的是自包含的容器</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'aside'>
+		<h2>aside</h2>
+		<p>使用aside的例子还包括重要引述，侧栏，指向相关文章的一组链接（通常针对新闻网站），广告，nav元素组（如博客的友情链接），等等。</p>
+		<p><em>Note1</em>: 应该将附注栏内容放在main的内容之后</p>
+		<p><em>Note2</em>: 对于与内容有关的图像（如图表，图形或带有说明文字的插图），使用figure而非aside</p>
+		<p><em>Note3</em>: 不允许将aside嵌套在address元素内。</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'footer'>
+		<h2>footer</h2>
+		<p>页脚可以用在页面底部，也可以用在其他的地方。</p>
+		<p>footer元素代表嵌套它的最近的article, aside, blockquoate, body, details, fieldsets, figure, nav, section or td元素的页脚。只有当它最近的祖先是body时，它才是整个页面的页脚。</p>
+		<p>如果一个footer包着它所在区块（如一个article）的所有内容，它代表的是像附录，索引，版权页，许可协议这样的内容</p>
+		<p><em>Note1</em>: 页脚通常包含关于它所在区块的信息，如指向相关文档的链接，版权信息，作者及其他类似条目。</p>
+		<p><em>Note2</em>: 不能在footer里嵌套header或另一个footer。同时，也不能将footer嵌套在header或address元素里。</p>
+		<p><em>Note3</em>: 只能对页面级的footer，使用role = 'contentinfo', 且一个页面只能使用一次</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'div'>
+		<h2>div (division)</h2>
+		<p>div通用容器：有时需要在一段内容外围包一个容器，从而可以为其应用CSS样式或JavaScript效果。</p>
+		<p><em>Note1</em>: div对使用JavaScript实现一些特定的交互行为或效果也是有帮助的。例如，在页面中展示一张照片或一个对话框，同时让背景页面覆盖一个半透明的层。</p>
+		<p><em>Note2</em>: div不是唯一没有语义价值的元素。span是与div对应的一个元素：div是块级内容的无语义容器，而span则是短语内容的无语义容器</p>
+		<p><em>Note3</em>: 将期望出现在同一栏的内容包在一个div里，然后对这个div添加相应的样式。</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'ARIA'>
+		<h2>ARIA</h2>
+		<p>WAI-ARIA (Web Accessibility Initiative's Accessible Rich Internet Application): 无障碍访问的意义是让所有的访问者都能获取网站的内容。你的网站一部分访问者可能需要借助辅助设备（如屏幕阅读器）访问你的页面内容。ARIA的地标角色(landmark role)可以帮助用户识别页面区域，从而让屏幕阅读器用户可以直接跳到这些区域。通常，对这些区域指定role属性就可以了。</p>
+		<p>role = 'banner' 横幅，面向全站的内容，通常包含网站标志，网站赞助者标志，全站搜索工具等：横幅通常显示在页面的顶端，而且通常横跨整个页面的宽度，将其添加到页面级的header元素，每个页面只用一次</p>
+		<p>role = 'navigation' 导航，文档内不同内容或相关文档的导航性元素的集合：与nav元素是对应关系。应将其添加到每个nav元素，或其他包含导航性链接的容器。这个角色可以在每个页面上使用多次，但是同nav一样，不要过度使用该属性。</p>
+		<p>role = 'main' 主题，文档的主要内容：与main元素是对应关系。最好将其添加到main元素，也可以添加到其他表示主题内容的元素（可能是div）在每个页面仅使用一次。</p>
+		<p>role = 'complementary' 补充性内容，文档中作为主体内容缺失的支撑部分。它对区分主体内容是有意义的：与aside是元素对应关系。应将其添加到aside或div元素（前提是该div仅包含补充性内容）。可以在一个页面包含多个complemenary角色。但不要过度使用</p>
+		<p>role = 'contentinfo' 内容信息，包含关于文档信息的大块可感知区域这类信息的例子包括版权声明和指向隐私声明的链接等：将其添加至整个页面的页脚，每个页面仅使用一次</p>
+		<p><em>Note1</em>: 推荐 <a href = 'http://blog.paciellogroup.com/2013/02/using-wai-aria-landmarks-2013/'>blog.paciellogroup.com/2013/02/using-wai-aria-landmarks-2013/</a></p>
+		<p><em>Note2</em>: 推荐 <a href = 'http://webaim.org/projects/screenreadersurvey4/'>webaim.org/projects/screenreadersurvey4/</a></p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'Class/ID'>
+		<h2>Class/ID</h2>
+		<p>可以给HTML元素分配唯一的标识符，或指定其属于某个或某几个类别。接着就可以创建指向具有特定id的元素的链接，还可以使用JavaScript获取id和class属性，从而对元素添加特定的行为。</p>
+		<p><em>Note1</em>: 每个id必须是唯一的，即一个页面不能出现两个具有相同id的元素。并且每个元素只能有一个id</p>
+		<p><em>Note2</em>: 一个class名称可以分配给页面中任意数量的元素，且一个元素可以有一个以上的class</p>
+		<p><em>Note3</em>: 在class和id名称中，通常使用中划线分割多个单词。</p>
+		<p><em>Note4</em>: 可以使用class属性实现 <a href = 'http://microformats.org'>微格式</a></p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'Title'>
+		<h2>Title</h2>
+		<p>可以使用title属性为网站上任何部分加上提示标签。另外使用title可以提升无障碍访问功能，因为加上她们之后屏幕阅读器可以为用户朗读title文本</p>
+		<p><a href = '#basicPage'>Back2Outline</a></p>
+	</article>
+
+</article>
+
+</body>
+
+	
+</html>

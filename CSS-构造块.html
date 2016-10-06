@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = 'utf-8' />
+	<title>Text</title>
+
+	<style>
+		ul.topnav{
+			list-style-type: none; 
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		ul.topnav li{float: left;}
+
+		ul.topnav li a{
+			display: inline-block;
+			color:#f2f2f2;
+			text-align: center; 
+			padding: 14px 16px;
+			text-decoration: none;
+			transition: .3s;
+			font-size: 17px;
+		}
+
+		ul.topnav li a: hover {background-color: #555;}
+
+		ul.topnav li.icon {display: none;}
+
+
+
+	}
+}
+	</style>
+
+</head>
+<ul class = 'topnav' id = 'myTopnav'>
+	<li><a href = 'learning_note.html'> Home </a></li>
+	<li><a href = 'basicPage.html'> basicPage </a></li>
+	<li><a href = 'text_HTML.html'> Text </a></li>
+	<li><a href = 'CSS-构造块.html'> CSS-构造块 </a></li>
+	
+</ul>
+
+<body>
+
+<article id = 'CSS-outline'>
+	<h1> CSS 构造块</h1>
+	<li><a href = '#构造样式规则'>构造样式规则</a></li>
+	<li><a href = '#inheritance'> inheritance 继承</a></li>
+	<li><a href = '#figure'> 创建图</a></li>
+	<li><a href = '#cite'> 引用或参考</a></li>
+	<li><a href = '#blockquote'> 引述文本</a></li>
+	<li><a href = '#time'> 指定时间</a></li>
+	
+	<article id = '构造样式规则'>
+		<h2>构造样式规则</h2>
+		<p>样式表中的每条规则都有两个主要部分：选择器(selector) 和 声明块 (declaration block)</p>
+		<p>选择器(selector)： 决定哪些元素收到影响</p>
+		<p>声明块 (declaration block)：由一个或者多个属性－值对组成。即，每个属性－值对构成一条声明。</p>
+		<p><a href = '#CSS-outline'>Back2Outline</a></p>
+	</article>
+
+	<article id = 'inheritance'>
+		<h2>inheritance 继承</h2>
+		<p>当某个元素应用CSS属性时，这些属性不仅会影响该元素，还会影响其下的分支元素</p>
+		<p>以下是哪些属性会被继承：</p>
+		<li>文本</li>
+			<li>color (颜色，a元素除外)</li>
+			<li>direction</li>
+			<li>font</li>
+			<li>font-family</li>
+			<li>font-size</li>
+			<li>font-style 用于设置斜体</li>
+			<li>font-variant 用于设置小型大写字母</li>
+			<li>font-weight</li>
+			<li>letter-spacing</li>
+			<li>line-height</li>
+			<li>text-align 用于设置对齐方式</li>
+			<li>text-indent</li>
+			<li>text-transform 用于修改大小写</li>
+			<li>visibility</li>
+			<li>white-space</li>
+			<li>word-spacing</li>
+		<p> </p>
+		<li>列表</li>
+			<li>list-style 列表样式</li>
+			<li>list-style-image 用于为列表指定定制的标记</li>
+			<li>list-style-position 用于确定列表标记的位置</li>
+			<li>list-style-type 用于设置列表的标记</li>
+		<p> </p>
+		<li>表格</li>
+			<li>border-collapse 用于控制表格相邻单元格的边框是否合并为单一边框</li>
+			<li>border-spacing 用于指定表格边框之间的空隙大小</li>
+			<li>caption-side 用于设置表格标题的位置</li>
+			<li>empty-cells 用于设置是否显示表格中的空单元格</li>
+		<p> </p>
+		<li>其他</li>
+			<li>cursor 鼠标指针</li>
+			<li>quotes 用于指定引号样式</li>
+			
+		<p><a href = '#CSS-outline'>Back2Outline</a></p>
+	</article>
+
+
+</article>
+
+</body>
+
+	
+</html>
